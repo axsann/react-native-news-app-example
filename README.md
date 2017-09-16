@@ -2,6 +2,8 @@
 
 Smart News のような違い棚レイアウトのニュース一覧を表示するReact Nativeアプリサンプルです。
 
+<img src="https://raw.githubusercontent.com/axsann/react-native-news-app-example/master/thumb.png" width="200" />
+
 ### 機能一覧
 * 違い棚表示
 * カテゴリ別表示
