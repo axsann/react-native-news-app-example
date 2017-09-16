@@ -1,0 +1,60 @@
+{
+  "name": "NewsApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "jest": "jest",
+    "flow": "flow",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "native-base": "2.1.5",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1",
+    "react-native-spinkit": "Exilz/react-native-spinkit",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.15.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-react-native": "1.9.2",
+    "eslint": "^3.19.0",
+    "eslint-plugin-flowtype": "^2.33.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-react-native": "^2.3.2",
+    "flow-bin": "^0.45.0",
+    "jest": "^20.0.4",
+    "mock-async-storage": "^1.0.3",
+    "react-dom": "16.0.0-alpha.12",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "notify": true,
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!native-base)/"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage/",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/src/containers/",
+      "/src/navigators/",
+      "/src/App.js"
+    ]
+  }
+}

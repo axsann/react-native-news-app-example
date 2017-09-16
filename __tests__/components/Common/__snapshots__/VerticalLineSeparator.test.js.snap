@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VerticalLineSeparator renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#eeeeee",
+      "width": 1,
+    }
+  }
+/>
+`;

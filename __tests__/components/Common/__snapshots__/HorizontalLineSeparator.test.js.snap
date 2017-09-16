@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HorizontalLineSeparator 余白あり 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#eeeeee",
+        "height": 1,
+      },
+      Object {
+        "marginLeft": 10,
+        "marginRight": 10,
+        "marginTop": 10,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`HorizontalLineSeparator 余白なし 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#eeeeee",
+        "height": 1,
+      },
+      Object {
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+      },
+    ]
+  }
+/>
+`;

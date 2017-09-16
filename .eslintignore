@@ -1,0 +1,5 @@
+flow-typed
+__tests__
+node_modules
+coverage
+jest-setup.js

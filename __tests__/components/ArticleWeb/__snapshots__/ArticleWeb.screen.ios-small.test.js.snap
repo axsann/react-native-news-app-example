@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleWebScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "stretch",
+      "backgroundColor": "transparent",
+      "flex": 1,
+    }
+  }
+>
+  <WebView
+    onError={[Function]}
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "http://example.com",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "flex": 1,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <RNSpinkit
+        color="#eeeeee"
+        size={100}
+        style={
+          Array [
+            Object {
+              "height": 100,
+              "width": 100,
+            },
+            Object {
+              "marginTop": -90,
+            },
+          ]
+        }
+        type="ThreeBounce"
+      />
+    </View>
+  </View>
+</View>
+`;

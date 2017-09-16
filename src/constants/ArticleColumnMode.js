@@ -1,0 +1,4 @@
+export default {
+  TWO_COLUMN: 'TWO_COLUMN',
+  THREE_COLUMN: 'THREE_COLUMN',
+}

@@ -1,0 +1,27 @@
+// @flow
+
+import 'react-native'
+import React from 'react'
+import ArticleRowSix from '../../../src/components/Articles/ArticleRowSix.component'
+
+// Note: test renderer must be required after react-native.
+import renderer from 'react-test-renderer'
+
+const mockSixItems = [
+  {"title":"あああああああああああああああああああああああああああ","url":"https://example.com","date":"20XX年Y月Z日","imgUrl":"https://placehold.jp/150x150.png","tags":["タグB"]},
+  {"title":"あああああああああああああああああああああああああああ","url":"https://example.com","date":"20XX年Y月Z日","imgUrl":"https://placehold.jp/150x150.png","tags":["タグA","タグG"]},
+  {"title":"あああああああああああああああああああああああああああ","url":"https://example.com","date":"20XX年Y月Z日","imgUrl":"https://placehold.jp/150x150.png","tags":["タグE"]},
+  {"title":"あああああああああああああああああああああああああああ","url":"https://example.com","date":"20XX年Y月Z日","imgUrl":"https://placehold.jp/150x150.png","tags":["タグC","タグA"]},
+  {"title":"あああああああああああああああああああああああああああ","url":"https://example.com","date":"20XX年Y月Z日","imgUrl":"https://placehold.jp/150x150.png","tags":["タグB","タグF"]},
+  {"title":"あああああああああああああああああああああああああああ","url":"https://example.com","date":"20XX年Y月Z日","imgUrl":"https://placehold.jp/150x150.png","tags":["タグA"]},
+]
+
+describe('ArticleRowSix', () => {
+  it('renders correctly', () => {
+    const instance = renderer.create(
+      <ArticleRowSix articles={mockSixItems} onPressArticle={()=>{}} />
+    )
+
+    expect(instance.toJSON()).toMatchSnapshot()
+  })
+})
