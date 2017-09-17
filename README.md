@@ -1,8 +1,8 @@
 # React Native News App Example
 
-Smart News のような違い棚レイアウトのニュース一覧を表示するReact Nativeアプリサンプルです。
+Smart News のような違い棚レイアウトのニュース一覧を表示するReact Nativeサンプルです。
 
-<img src="https://raw.githubusercontent.com/axsann/react-native-news-app-example/master/thumb.png" width="200" />
+<img src="https://raw.githubusercontent.com/axsann/react-native-news-app-example/master/thumb.png" width="250" />
 
 ### 機能一覧
 * 違い棚表示
