@@ -1,6 +1,6 @@
 // @flow
 /**
- * 予約一覧画面
+ * タグ検索画面
  */
 
 import React, { Component } from 'react'
