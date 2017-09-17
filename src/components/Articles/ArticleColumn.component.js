@@ -26,7 +26,7 @@ type Props = {
 type State = {
   imageFlex: number,
   textFlex: number,
-  doesCropTitle: boolean,
+  shouldCropTitle: boolean,
 }
 
 export default class ArticleColumn extends Component {
@@ -38,7 +38,7 @@ export default class ArticleColumn extends Component {
     this.state = {
       imageFlex: 4,
       textFlex: 3,
-      doesCropTitle: false,
+      shouldCropTitle: false,
     }
   }
 
@@ -48,7 +48,7 @@ export default class ArticleColumn extends Component {
         this.setState({
           imageFlex: 4,
           textFlex: 3,
-          doesCropTitle: false,
+          shouldCropTitle: false,
         })
         break
       }
@@ -56,7 +56,7 @@ export default class ArticleColumn extends Component {
         this.setState({
           imageFlex: 8,
           textFlex: 9,
-          doesCropTitle: this.isDeviceWidthShort ? true : false,
+          shouldCropTitle: this.isDeviceWidthShort ? true : false,
         })
         break
       }
@@ -75,10 +75,10 @@ export default class ArticleColumn extends Component {
   }
 
   get articleTitle() {
-    const { doesCropTitle } = this.state
+    const { shouldCropTitle } = this.state
     const { title } = this.props.article
 
-    if (doesCropTitle && title.length > CROP_SIZE) {
+    if (shouldCropTitle && title.length > CROP_SIZE) {
       return `${title.substr(0, CROP_SIZE)}...`
     } else {
       return title
