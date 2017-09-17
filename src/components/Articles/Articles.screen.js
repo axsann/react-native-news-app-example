@@ -95,26 +95,37 @@ export default class ArticlesScreen extends Component {
 
   renderFooter = () => {
     const { isFetching, fetchSucceeded } = this.props
-    const { dataSource } = this.state
-    const isEmptyDataSource = dataSource.length === 0
 
     if (fetchSucceeded && !isFetching) {
       return <View>
-               { !isEmptyDataSource &&
+               { !this.isEmptyDataSource &&
                <HorizontalLineSeparator />
                }
                { this.lastRow }
+               { !this.isEmptyLastList &&
                <HorizontalLineSeparator />
+               }
              </View>
     }
 
     return <View />
   }
 
+  get isEmptyDataSource(): boolean {
+    const { dataSource } = this.state
+
+    return dataSource.length === 0
+  }
+
+  get isEmptyLastList(): boolean {
+    const { lastList } = this.props.articlesDevidedBy6
+
+    return !lastList
+  }
+
   get lastRow() {
-    const { articlesDevidedBy6 } = this.props
-    const { lastList } = articlesDevidedBy6
-    const lastListLength = lastList.length
+    const { lastList } = this.props.articlesDevidedBy6
+    const lastListLength = lastList ? lastList.length : 0
 
     switch (lastListLength) {
       case 6: {

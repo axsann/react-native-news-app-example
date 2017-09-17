@@ -55,7 +55,7 @@ export default class ArticleColumn extends Component {
       case ARTICLE_COLUMN_MODE.THREE_COLUMN: {
         this.setState({
           imageFlex: 8,
-          textFlex: 9,
+          textFlex: 11,
           shouldCropTitle: this.isDeviceWidthShort ? true : false,
         })
         break

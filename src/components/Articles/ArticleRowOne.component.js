@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     flex: 3,
+    marginRight: 10,
   },
   image: {
     flex: 2,
