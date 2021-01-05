@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.21.1",
     "native-base": "2.1.5",
     "react": "16.0.0-alpha.12",
     "react-native": "0.45.1",
